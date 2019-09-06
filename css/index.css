@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    margin: 20px 50px;
 }
 ol, ul {
 	list-style: none;
@@ -49,6 +50,23 @@ table {
 
 * {
     box-sizing: border-box;
+}
+
+.topBar {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    width: 100%;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
 }
 
 html, body {
@@ -93,6 +111,10 @@ p {
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
+}
+
+.container .middle-content .boxes .box1 {
+    color: teal;
 }
 
 .middle-content .boxes {
