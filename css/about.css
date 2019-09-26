@@ -29,8 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    line-height: 1;
-    margin: 20px 50px;
+	line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -61,7 +60,8 @@ table {
     justify-content: space-around;
     align-items: flex-end;
 
-    width: 100%;    
+    width: 100%;
+    margin : 0px     
 }
 
 .nav a {
@@ -69,18 +69,14 @@ table {
     text-decoration: none;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 50px;
 }
 
 .container .topPic {
     margin: 40px 0px 20px 0px;
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -98,12 +94,34 @@ p {
     margin: 0 auto;
 }
 
+.midContainer {
+    display: flex;
+}
+
+button {
+    background: white;
+    border-radius: 6px;
+    height: 30px;
+    width: 120px;
+    border: 2px solid black;
+
+}
+
+.bottomContainer {
+    display: flex;
+}
+
+.top-content p {
+    margin-bottom: 15px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    margin: 0px 15px 25px 15px;
 }
 
 .top-content .text-container {
@@ -123,125 +141,25 @@ p {
 }
 
 .container .middle-content .boxes .box1 {
-    display: flex;
-    color: white;
-    background: teal;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
+    color: teal;
 }
-
-.container .middle-content .boxes .box2 {
-    display: flex;
-    color: white;
-    background: gold;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.container .middle-content .boxes .box3 {
-    display: flex;
-    color: white;
-    background: cadetblue;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.container .middle-content .boxes .box4 {
-    display: flex;
-    color: white;
-    background: coral;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.container .middle-content .boxes .box5 {
-    display: flex;
-    color: white;
-    background: crimson;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.container .middle-content .boxes .box6 {
-    display: flex;
-    color: white;
-    background: forestgreen;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.container .middle-content .boxes .box7 {
-    display: flex;
-    color: white;
-    background: darkorchid;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.container .middle-content .boxes .box8 {
-    display: flex;
-    color: white;
-    background: hotpink;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.container .middle-content .boxes .box9 {
-    display: flex;
-    color: white;
-    background: indigo;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.container .middle-content .boxes .box10 {
-    display: flex;
-    color: white;
-    background: dodgerblue;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-
 
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
 }
 
-
+.middle-content .boxes .box {
+    width: 12.5%;
+    height: 100px;
+    background: black;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .bottom-content {
     display: flex;
